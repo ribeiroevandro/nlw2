@@ -1,0 +1,115 @@
+:root{
+    --color-background: #f0f0f7;
+    --color-primary-lighter: #9871f5;
+    --color-primary-light: #916beb;
+    --color-primary: #8257e5;
+    --color-primary-dark: #774dd6;
+    --coloer-primary-darker: #6842c2;
+    --color-secundary: #15ef65;
+    --color-secundary-dark: #12d85a;
+    --color-title-in-primary: #ffffff;
+    --color-text-in-primary: #d4c2ff;
+    --color-text-title: #33274f;
+    --color-text-complement: #9c98a6;
+    --color-text-base: #6a6180;
+    --color-line-in-white: #e6e6f0;
+    --color-input-background: #f8f8fc;
+    --color-button-text: #ffffff;
+    --color-box-base: #ffffff;
+    --color-box-footer: #fafafc;
+    --color-small-info: #c1bccc;
+    --color-in-line-white: #d9d7db; 
+}
+
+
+#page-study #container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-header {
+background-color: var(--color-primary);
+
+display: flex;
+flex-direction: column;
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+
+    padding: 1.6rem 0; 
+}
+
+.page-header .top-bar-container a {
+height: 3.2rem;
+transition: opacity 0.2s;
+
+}
+
+.page-header .top-bar-container a:hover  {
+opacity: 0.6;
+
+}
+
+.page-header .top-bar-container > img {
+    height: 1.6rem;
+}
+ 
+.page-header .header-content {
+   width: 90%; 
+   margin: 3.2rem auto;
+
+   position: relative;
+}
+
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo;
+    line-height: 4.2rem;
+    color: var(--color-title-in-primary);
+    
+}
+
+.page-header .header-content p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
+}
+
+
+@media (min-width: 700px) {
+    
+    .page-header {
+        height: 340px ;
+    }
+ 
+    .page-header .top-bar-container {
+        max-width: 1100px;
+    }
+ 
+    .page-header .header-content {
+        max-width: 740px;
+ 
+        margin:0 auto ;
+ 
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+ 
+    }
+ 
+    .page-header .header-content strong {
+        max-width: 700px;
+ 
+ 
+    }
+
+ }
